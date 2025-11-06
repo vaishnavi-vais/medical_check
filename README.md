@@ -15,3 +15,5 @@ It converts spoken input into accurate text and provides intelligent responses, 
 ⚙️ Configurable via .env file for API keys and environment variables
 
 📊 Lightweight and easy to deploy
+
+fine tunned and realeased on Hugging face 
