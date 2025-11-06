@@ -2,31 +2,36 @@
 🎯 Overview
 
 Medico AI is a real-time speech-to-text and medical assistance application built using OpenAI Whisper, Python, and Gradio.
-It converts spoken input into accurate text and provides intelligent responses, enabling smooth human–AI interaction for healthcare or general use.
+It converts spoken input into accurate text and provides intelligent, context-aware medical responses—enabling smooth, natural human–AI interaction for healthcare consultations and general conversation.
 
 🚀 Features
 
-🎙️ Real-time speech-to-text using OpenAI Whisper
+🎙️ Real-time Speech-to-Text using OpenAI Whisper
 
-🤖 AI-powered medical assistance through natural language interaction
+🌍 Multilingual Support – Users can speak in any native language, and the system will provide answers in the same language
 
-🌐 Web interface built with HTML, CSS, and Gradio
+🤖 AI-powered Medical Assistance with natural language conversation
 
-⚙️ Configurable via .env file for API keys and environment variables
+🎨 User-friendly Web Interface built using HTML, CSS, and Gradio
 
-📊 Lightweight and easy to deploy
+🔧 Configurable via .env for environment variables/API keys
 
-## ⚠️ Troubleshooting
+📦 Easy to Deploy with minimal dependencies
 
-- **Microphone not working**:
-  - Check if another application is using the microphone
-  - Verify PyAudio is installed correctly
-  - Try adjusting the energy threshold in the code if having trouble with detection
+📚 Dataset Released on Hugging Face for open research and model improvement 
 
-- **Model download issues**:
-  - Check your internet connection
-  - The first run will take longer as it downloads the model
-  - Models are cached in your home directory under `.cache/huggingface`
+⚠️ Troubleshooting / Notes
+
+Ensure your microphone permissions are enabled.
+
+If the accuracy of transcription drops, check your audio input quality (background noise, mic distance, etc.).
+
+The multilingual responses rely on Whisper + LLM model capabilities.
+If answers are not returning in your language, verify language auto-detection or manually set your output language parameter.
+
+Make sure your .env file contains a valid OpenAI API Key.
+
+
 
 ## 📝 License
 
